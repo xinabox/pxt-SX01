@@ -21,9 +21,9 @@ namespace SX01 {
         return pins.i2cReadNumber(SX01_I2C_ADDR, NumberFormat.UInt8BE);
     }
 
-    function getUInt16LE(reg: number): number {
+    function getUInt16BE(reg: number): number {
         pins.i2cWriteNumber(SX01_I2C_ADDR, reg, NumberFormat.UInt8BE);
-        return pins.i2cReadNumber(SX01_I2C_ADDR, NumberFormat.UInt16LE);
+        return pins.i2cReadNumber(SX01_I2C_ADDR, NumberFormat.UInt16BE);
     }
 
 
@@ -35,7 +35,7 @@ namespace SX01 {
         let b: NumberFormat.UInt8LE
         let data: NumberFormat.UInt16LE
 
-        data = getUInt16LE(ADC_REG_RESULT);
+        data = getUInt16BE(ADC_REG_RESULT);
 
         a = ((data & 0xFF00) >> 8);
         b = ((data & 0x00FF) >> 0);
