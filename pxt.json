@@ -1,7 +1,7 @@
 {
   "name": "SX01",
   "version": "0.0.3",
-  "description": "",
+  "description": "XinaBox SX01 Analog Input",
   "dependencies": {
     "core": "*"
   },
