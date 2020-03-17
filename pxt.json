@@ -1,17 +1,22 @@
 {
-    "name": "pxt-sx01",
-    "version": "0.0.3",
-    "description": "",
-    "dependencies": {
-        "core": "*"
-    },
-    "files": [
-        "README.md",
-        "main.ts"
-    ],
-    "testFiles": [
-        "test.ts"
-    ],
-    "public": true,
-    "preferredEditor": "tsprj"
+  "name": "SX01",
+  "version": "0.0.3",
+  "description": "",
+  "dependencies": {
+    "core": "*"
+  },
+  "files": [
+    "README.md",
+    "main.ts"
+  ],
+  "testFiles": [
+    "test.ts"
+  ],
+  "public": "true",
+  "preferredEditor": "blocksprj",
+  "license": "MIT",
+  "authors": [
+    "KalbeAbbas Jafferi",
+    "Bjarke Gotfredsen"
+  ]
 }
